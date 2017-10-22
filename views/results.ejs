@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class="container">
+    <h1>Result Page</h1>
+    <a href="/" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search Again 
+    </a>
+    <div class="row">
+        <% data["Search"].forEach(function(movie){ %>
+            <div class="col-sm-4">
+                <figure>
+                    <div id="<%= movie["imdbID"] %>">
+                        <img src="<%= movie["Poster"]; %>" />
+                    </div>
+                    <figcaption><strong><%= movie["Title"]; %></strong></figcaption>
+                </figure>
+            </div>
+        <% }); %>
+    </div>
+    <a href="/" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search Again 
+    </a>
+</div>
+
+
+
+<% include partials/footer %>

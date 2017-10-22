@@ -1,0 +1,24 @@
+img{
+    height: 500px;
+    width: 100%;
+}
+
+.col-sm-4{
+    margin-bottom: 20px;
+}
+
+figcaption{
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+.btn{
+    margin: 10px;
+}
+
+#footer{
+    text-align: center;
+}
+
